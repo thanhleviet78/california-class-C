@@ -21,7 +21,7 @@ h2{font-size:23px;margin:0 0 12px}h3{font-size:18px;margin:0 0 7px}.muted{color:
 button,.btn{cursor:pointer}.primary{background:var(--blue);color:white;border:0;border-radius:10px;padding:11px 15px;font-weight:700}.secondary{background:white;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:10px 13px;font-weight:650}
 input[type=search]{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin:8px 0 12px}
 .lesson{border:1px solid var(--line);padding:14px;border-radius:12px;margin:10px 0}.lesson.done{border-color:#80b99b;background:#f4fbf6}
-.tag{display:inline-block;border-radius:99px;background:#eaf2fa;color:#174d79;padding:3px 9px;font-size:12px;font-weight:700}
+.tag{display:inline-block;border-radius:99px;background:#eaf2fa;color:#174d79;padding:7px 13px;font-size:16px;font-weight:800;letter-spacing:.25px}
 .word{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px 0;border-bottom:1px solid var(--line)}.word b{display:block}.word small{color:var(--muted)}
 .question{font-size:18px;font-weight:750;margin:10px 0}.english{color:#42617e;font-style:italic;margin:5px 0 12px}
 .option{display:block;width:100%;text-align:left;padding:12px;border:1px solid var(--line);background:white;border-radius:10px;margin:8px 0;font:inherit}
@@ -37,7 +37,7 @@ a{color:#145e9a}ul{padding-left:22px}.notice{border-left:4px solid #d99a25;backg
 :root{--navy:#09090b;--blue:#0a84ff;--pale:#18181b;--ink:#f4f4f5;--muted:#b4b4bc;--line:#3f3f46;--green:#00d6b2;--bg:#09090b}
 body{background:#09090b;color:#f4f4f5;font-size:16px}
 header{background:#111114;padding:16px 16px 14px;border-bottom:1px solid #33333a}
-header .tag{background:#27272a!important;color:#ffb703!important}
+header .tag{background:#27272a!important;color:#ffb703!important;font-size:17px;padding:8px 14px;letter-spacing:.35px}
 header p{color:#d4d4d8}
 nav{background:#111114;border-bottom:1px solid #3f3f46;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:8px 10px}
 nav button{white-space:normal;min-height:48px;border:2px solid #52525b;background:#27272a;color:#fff;border-radius:12px;padding:8px 4px;font-size:13px;font-weight:800}
@@ -72,7 +72,7 @@ footer{color:#a1a1aa}
 .question>span,.english>span{flex:1 1 100%;min-width:0}
 .question .speech-btn,.english .speech-btn{flex:0 0 auto;align-self:flex-start;margin:3px 0 5px auto}
 .word>div{min-width:0}.word .vocab-speech{margin:6px 0 2px auto}
-@media(max-width:600px){header{padding:12px 13px}header h1{font-size:25px}.card{padding:12px}.lesson-fold{padding:0 11px}.word{gap:10px}.speech-btn{font-size:11px;padding:5px 7px;min-height:30px}}
+@media(max-width:600px){header{padding:12px 13px}header .tag{font-size:16px;padding:8px 13px}.card{padding:12px}.lesson-fold{padding:0 11px}.word{gap:10px}.speech-btn{font-size:11px;padding:5px 7px;min-height:30px}}
 
 /* Từ vựng: nút nghe nằm sát lề phải, điều hướng từng từ không cần vuốt dài */
 .word{align-items:start;gap:12px;padding:14px 0}
@@ -107,8 +107,7 @@ footer{color:#a1a1aa}
 @media(max-width:380px){.quiz-controls{gap:5px}.quiz-controls label{font-size:12px}.quiz-controls select{font-size:12px;padding:7px 5px}.quiz-controls #startQuiz{font-size:12px;padding:7px 8px}}
 </style></head>
 <body>
-<header><div class="wrap"><div class="tag" style="background:#dceeff;color:#174d79">CHƯƠNG TRÌNH TỰ HỌC · CLASS C</div>
-<h1>Học Lái Xe California</h1></div></header>
+<header><div class="wrap"><div class="tag" style="background:#dceeff;color:#174d79">🚗 TỰ HỌC CLASS C</div></div></header>
 
 <nav id="nav" aria-label="Điều hướng chính">
 <button class="active" data-tab="home">⌂ Tổng quan</button><button data-tab="learn">📘 Bài học</button><button data-tab="quiz">✍️ Luyện thi</button><button data-tab="resources">☰ Tài liệu</button>
