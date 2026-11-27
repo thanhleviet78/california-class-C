@@ -98,10 +98,17 @@ footer{color:#a1a1aa}
 .handbook-card li{margin-bottom:7px}
 .handbook-card .notice{margin:12px 0}
 @media(max-width:420px){.vocab-audio-row{justify-content:flex-end;gap:6px}.vocab-audio-row .speech-btn{font-size:11px;padding:6px 7px;min-height:34px}.handbook-card{padding:11px}}
+
+/* Giữ chế độ luyện thi và nút bắt đầu trên cùng một hàng ở điện thoại */
+.quiz-controls{display:flex;flex-wrap:nowrap;align-items:center;gap:7px;width:100%;min-width:0}
+.quiz-controls label{flex:0 0 auto;white-space:nowrap;font-size:14px}
+.quiz-controls select{flex:1 1 auto;min-width:0;width:1%;padding:8px 7px;font-size:13px}
+.quiz-controls #startQuiz{flex:0 0 auto;white-space:nowrap;padding:8px 10px;min-height:42px;font-size:13px}
+@media(max-width:380px){.quiz-controls{gap:5px}.quiz-controls label{font-size:12px}.quiz-controls select{font-size:12px;padding:7px 5px}.quiz-controls #startQuiz{font-size:12px;padding:7px 8px}}
 </style></head>
 <body>
 <header><div class="wrap"><div class="tag" style="background:#dceeff;color:#174d79">CHƯƠNG TRÌNH TỰ HỌC · CLASS C</div>
-<h1>Học Lái Xe California</h1><p>Học bằng tiếng Việt · Làm quen tiếng Anh · Chuẩn bị DMV và lái xe an toàn</p></div></header>
+<h1>Học Lái Xe California</h1></div></header>
 
 <nav id="nav" aria-label="Điều hướng chính">
 <button class="active" data-tab="home">⌂ Tổng quan</button><button data-tab="learn">📘 Bài học</button><button data-tab="quiz">✍️ Luyện thi</button><button data-tab="resources">☰ Tài liệu</button>
@@ -131,7 +138,7 @@ footer{color:#a1a1aa}
 </div></section>
 <section id="vocab" class="panel"><details class="resource-fold"><summary>Từ vựng Anh – Việt</summary><div class="fold-content"><p class="muted">Phát âm tiếng Việt chỉ là gợi ý gần đúng, không thay thế phát âm chuẩn.</p><input type="search" id="vSearch" placeholder="Tìm từ: stop, lane, nhường đường..."><div id="vocabList"></div><div id="vocabPager" class="vocab-pager" aria-label="Điều hướng từ vựng"></div></div></details></section>
 <section id="quiz" class="panel"><div class="card"><h2>Luyện thi trắc nghiệm</h2><p class="muted">Mỗi lượt 10 câu ngẫu nhiên. Chọn đáp án, xem giải thích rồi chuyển câu. Kết quả chỉ là công cụ tự đánh giá.</p>
-<div class="row"><label for="quizMode">Chế độ:</label><select id="quizMode" class="secondary"><option value="all">Tất cả câu hỏi</option><option value="vi">Ưu tiên câu tiếng Việt</option><option value="en">Câu có tiếng Anh</option></select><button class="primary" id="startQuiz">Bắt đầu 10 câu</button></div>
+<div class="row quiz-controls"><label for="quizMode">Chế độ:</label><select id="quizMode" class="secondary"><option value="all">Tất cả câu hỏi</option><option value="vi">Ưu tiên câu tiếng Việt</option><option value="en">Câu có tiếng Anh</option></select><button class="primary" id="startQuiz">Bắt đầu 10 câu</button></div>
 <div id="quizArea" style="margin-top:18px"><p class="muted">Nhấn “Bắt đầu 10 câu” để làm bài.</p></div></div>
 <details class="card resource-fold"><summary>Nguyên tắc ôn tập</summary><p>Đọc câu hỏi, tự chọn đáp án, sau đó đọc giải thích. Ghi lại chủ đề sai và quay lại handbook. Đừng học thuộc đáp án mà không hiểu tình huống.</p></details>
 </section>
